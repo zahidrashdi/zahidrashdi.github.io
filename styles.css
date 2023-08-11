@@ -1,0 +1,194 @@
+@font-face {font-family: 'urdufont';font-style: normal;font-weight: 400;src: url(mehr-nastaliq-web-1p1.ttf) format('truetype');}
+
+body {
+	font-family:urdufont;
+	font-size:20px;
+	line-height:35px;
+	margin:0;
+	background-color:#FFF;
+}
+
+header {
+	text-align:center;
+	background-color:#E9EEDE;
+	padding-top:.7em;
+	background-image: linear-gradient(to right, darkseagreen, Beige, darkseagreen);
+	border-bottom:.1em solid #555;
+	
+}
+
+main {
+	direction:rtl;
+}
+
+h1.section-title {
+	color:darkgreen;
+	padding:.7em .7em .2em .7em;
+	background-color:#F2F2F2;
+	margin:0;
+	font-weight:normal;
+	font-size:1.7em;
+	word-spacing:.3em;
+	text-align:center;
+}
+
+a {
+	text-decoration:none;
+}
+
+#date_range {
+	text-align:center;
+	padding-top:1.5em;
+	line-height:1.5em;
+}
+
+
+.date-list {
+	text-align:center;
+	margin:0 auto;
+	padding:1em;
+	max-width:1200px;
+	font-size:1em;
+	word-spacing:.3em;
+	line-height:3em;
+}
+
+.date-list a {
+	padding:.5em 1em 0 1em;
+	background-color:DarkSeaGreen;
+	color:white;
+	border-radius:.8em;
+}
+
+.date-list a:hover {
+	background-color:#E9EEDE;
+	color:DarkSeaGreen;
+}
+
+/* ---------------------------------- ARTICLES/SPEECHES: MONTHS: LIST ------------------------------- */
+ 
+#content-listing table {
+	max-width:1200px;
+	width:96%;
+	margin:.9em auto .9em auto;
+	background-color:white;
+	padding:.2em;
+	border-collapse:collapse;
+	text-align:right;
+	font-size:1em;
+}
+
+#content-listing table tr:hover {
+	background-color:lightyellow;
+}
+
+#content-listing th {
+	text-align:center;
+	padding:.4em .7em 0 .7em;
+	font-weight:normal;
+	color:white;
+	background-color:darkseagreen;
+	border:1px solid #CCC;
+}
+
+#content-listing td {
+	padding:.4em .7em 0 .7em;
+	border:1px solid #CCC;
+}
+
+#content-listing td:last-child {
+	white-space:nowrap;
+	word-spacing:.2em;
+}
+
+
+/* ---------------------------------- ARTICLE ------------------------------- */
+
+h1#content-title {
+	background-color:#F2F2F2;
+	font-weight:normal;
+	font-size:2em;
+	margin:0;
+	padding-top:.5em;
+	line-height:1.4em;
+	text-align:center;
+	direction:rtl;
+}
+
+#content-reference {
+	margin:0 auto 30px auto;
+	border:1px solid #000;
+	border-collapse:collapse;
+}
+
+#content-reference td {
+	padding:.4em .4em 0 .4em;
+	line-height:1.3em;
+	text-align:right;
+}
+
+#content-reference td.title {
+	background-color:#EEE;
+	border:1px solid #000;
+}
+
+#content {
+	text-align:justify;
+	max-width:1000px;
+	width:96%;
+	padding:10px 0 20px 0;
+	border-bottom:1px solid #999;
+	margin:0 auto 70px auto;
+}
+
+#content p {
+	text-indent:25px;
+}
+
+#content .left-align {
+	text-align:left;
+}
+
+#content .center {
+	text-align:center;
+}
+
+/* ---------------------------------- TWEETS ------------------------------- */
+
+#tweets {
+	margin-top:1em;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+
+#tweets > div {
+	min-width:100px;
+	max-width:300px;
+	margin:10px;
+	border:1px solid #CCC;
+	background-color:white;
+}
+
+#tweets h2 {
+	margin:0;
+	font-weight:normal;
+	word-spacing:.3em;
+	background-color:#F2F2F2;
+	line-height:1em;
+	padding-top:.4em;
+	text-align:center;
+}
+
+#tweets .tweet-content {
+	width:92%;
+	margin:0 auto;
+	text-indent:1em;
+	text-align:justify;
+}
+
+
+iframe {
+	display:block;
+	margin:0 auto;
+}

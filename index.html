@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>مولانا ابوعمار زاہد الراشدی</title>
+	<meta name='robots' content='noindex,nofollow'>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='styles.css' type='text/css' rel='stylesheet'>
+	<script>
+		function setDefaultDates() {
+			let from_to_dates = document.location.search.replace(/^.*?\=/, '');
+			let q_from_date = from_to_dates.split('&to_date=')[0];
+			let q_to_date = from_to_dates.split('&to_date=')[1];
+
+			if (from_to_dates.length == 0) {
+				let from_date_js = new Date();
+				from_date_js.setMonth(from_date_js.getMonth() - 1);
+				from_date_js.setDate('01');
+				document.getElementById('from_date').valueAsDate = from_date_js;
+				document.getElementById('to_date').valueAsDate = new Date();		
+			} else {
+				document.getElementById('from_date').value = q_from_date;
+				document.getElementById('to_date').value = q_to_date;
+			}
+		}
+		function searchByDates() {
+			let from_date = document.getElementById('from_date').value;
+			let to_date = document.getElementById('to_date').value;
+			window.location.href = 'date_search.html?from_date=' + from_date + '&to_date=' + to_date;
+		}
+	</script>
+</head>
+<body onload='setDefaultDates();'>
+<header>
+	<a href='index.html'><img src='https://i.ibb.co/qFRGhmj/logo-4.png'></a>
+</header>
+<main>
+
+	<h1 class='section-title'>
+	تحریریں
+	</h1>
+	
+	<section id='date_range'>
+		ابتدائی 
+		&nbsp; 
+		<input type='date' id='from_date'><br>
+		انتہائی
+		&nbsp; 
+		<input type='date' id='to_date'><br>
+		<input type='button' value='تلاش' onclick='searchByDates();'>
+	</section>
+	
+	<section class='date-list'>
+		<a href='nodes/jan.html'>جنوری</a> 
+		<a href='nodes/feb.html'>فروری</a> 
+		<a href='nodes/mar.html'>مارچ</a> 
+		<a href='nodes/apr.html'>اپریل</a> 
+		<a href='nodes/may.html'>مئی</a> 
+		<a href='nodes/jun.html'>جون</a> 
+		<a href='nodes/jul.html'>جولائی</a> 
+		<a href='nodes/aug.html'>اگست</a> 
+		<a href='nodes/sep.html'>ستمبر</a> 
+		<a href='nodes/oct.html'>اکتوبر</a> 
+		<a href='nodes/nov.html'>نومبر</a> 
+		<a href='nodes/dec.html'>دسمبر</a> 
+	</section>
+
+	<h1 class='section-title'>
+	ٹویٹس
+	</h1>
+	<section class='date-list'><a href='tweets/2020'>2020</a> <a href='tweets/2021'>2021</a> <a href='tweets/2022'>2022</a> <a href='tweets/2023'>2023</a> </section>
+
+	<h1 class='section-title'>
+	آڈیوز
+	</h1>
+	<section class='date-list'><a href='media.html'>آڈیوز</a></section>
+
+</main></body>
+</html>
